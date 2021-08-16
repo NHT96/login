@@ -1,0 +1,106 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: darkolivegreen;
+}
+.login_form{
+    width: 300px;
+    padding: 40px;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: darkslategray;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.login_form .btn-fgpw {
+    color: white;
+    text-decoration: none;
+}
+.login_form input[type="text"], input[type="password"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3984db;
+    border-radius: 24px;
+    padding: 14px 10px;
+    width: 200px;
+    color: white;
+    outline: none;
+    transition: 0.25s;
+}
+.login_form input[type="text"]:focus, input[type="password"]:focus{
+    width: 280px;
+    border-color:gold;
+}
+.login_form input[type = "submit"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #14bd0e;
+    border-radius: 24px;
+    padding: 14px 40px;
+    color: white;
+    outline: none;
+    transition: 0.25s;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.login_form input[type = "submit"]:hover{
+    background: #14bd0e;
+    color: black;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 24;
+}
+
+svg {
+    display: block;
+    font: 10.5em 'Montserrat';
+    margin: 0 auto;
+}
+
+.text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1){
+  stroke: #4D163D;
+  animation-delay: -1;
+}
+
+.text-copy:nth-child(2){
+  stroke: #840037;
+  animation-delay: -2s;
+}
+
+.text-copy:nth-child(3){
+  stroke: #BD0034;
+  animation-delay: -3s;
+}
+
+.text-copy:nth-child(4){
+  stroke: #BD0034;
+  animation-delay: -4s;
+}
+
+.text-copy:nth-child(5){
+  stroke: #FDB731;
+  animation-delay: -5s;
+}
+
+@keyframes stroke-offset{
+  100% {stroke-dashoffset: -35%;}
+}
